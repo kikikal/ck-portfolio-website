@@ -3,63 +3,136 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
     <script
       src="https://kit.fontawesome.com/29f240c368.js"
       crossorigin="anonymous"
     ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
+    <link rel="stylesheet" href="src/style.css" />
 
     <title>Christina Kalyvas</title>
   </head>
   <body>
     <header>
-      <h3>Hi, I am</h3>
-      <h1>Christina Kalyvas</h1>
-      <h3>, a</h3>
-      <h1>Junior Front-End Developer</h1>
-      <h3>and</h3>
-      <h1>UX Designer</h1>
+      <nav
+        class="navbar navbar-expand-lg navbar-dark bg-dark"
+        data-bs-theme="dark"
+      >
+        <div class="container-fluid">
+          <p class="navbar-brand">Christina Kalyvas</p>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+              <a class="nav-link" href="/works.html">My Works</a>
+              <a class="nav-link" href="#contact-me">Contact Me</a>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
-    <section>
-      <h3>A bit about me</h3>
-      <p>
-        I am based in Victoria, Australia, and enjoy developing front-end
-        products with user experience at the forefront.
-      </p>
-      <p>
-        I have experience using VS code, with technologies such as React.js,
-        Bootstrap and responsive web development, however I am also always open
-        to learning and discovering new tools and technologies to further my
-        knowledge.
-      </p>
-    </section>
-    <section>
-      <h3>Check out some of my featured works</h3>
-      
-      <a class="btn btn-primary" href="/works">More</a>
-    </section>
-    <section></section>
+    <main class="container">
+      <section class="intro">
+        <h1>
+          Hi, I am
+          <em>Christina Kalyvas</em>
+          , a
+          <em>Junior Front-End Developer</em>
+          and
+          <em> UX Designer</em>
+        </h1>
+      </section>
+      <section>
+        <h3>A bit about me</h3>
+        <p>
+          I am based in Victoria, Australia, and enjoy developing front-end
+          products with user experience at the forefront.
+        </p>
+        <p>
+          I have experience using VS code, with technologies such as React.js,
+          Bootstrap and responsive web development, however I am also always
+          open to learning and discovering new tools and technologies to further
+          my knowledge.
+        </p>
+      </section>
+      <section class="works">
+        <h3>Check out some of my featured works</h3>
+        <div class="row">
+          <div class="col-6">
+            <img src="src/images/dictionary.png" alt="" class="img-fluid" />
+            <a
+              class="btn"
+              href="https://dictionary-app-ck.netlify.app/"
+              target="_blank"
+              >Launch Dictionary App</a
+            >
+          </div>
+          <div class="col-6">
+            <img src="src/images/weather.png" alt="" class="img-fluid" />
+            <a
+              class="btn"
+              href="https://react-weather-app-ck.netlify.app"
+              target="_blank"
+              >Launch Weather App</a
+            >
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <img src="src/images/tokyo.png" alt="" class="img-fluid" />
+            <a
+              class="btn"
+              href="https://tokyo-project-ck.netlify.app/"
+              target="_blank"
+              >Launch Tokyo Project</a
+            >
+          </div>
+          <div class="col-6">
+            <img src="src/images/recipe.png" alt="" class="img-fluid" />
+            <a
+              class="btn"
+              href="https://recipe-generator-ck.netlify.app/"
+              target="_blank"
+              >Launch Recipe Generator</a
+            >
+          </div>
+        </div>
+        <a class="btn" href="/works">Check out more of my projects</a>
+      </section>
+      <section></section>
+    </main>
     <footer>
+      <div>
+        <h4 id="contact-me">
+          Interested in working together?
+          <br />
+          Contact me at
+          <a href="mailto:christina.kalyvas@gmail.com" target="_blank"
+            >christina.kalyvas@gmail.com</a
+          >
+        </h4>
+      </div>
       <div>
         <a href="www.linkedin.com/in/christinakalyvas" target="_blank"
           ><i class="fa-brands fa-linkedin"></i
