@@ -47,6 +47,9 @@ h3 {
 .works {
   margin-bottom: 50px;
   text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap:20px;
 }
 
 .works .work {
@@ -57,10 +60,9 @@ h3 {
 
 .works img {
   border-radius: 20px 20px 0 0;
-  width: 100%;
 }
 
-.works a {
+.work a, .more-works {
   background: var(--second-color);
   color: white;
   display: block;
