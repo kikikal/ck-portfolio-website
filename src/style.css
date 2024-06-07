@@ -1,11 +1,83 @@
+:root {
+  --first-color: #27296d;
+  --second-color: #5e63b6;
+  --third-color: #a393eb;
+  --fourth-color: #c786c9;
+
+  --body-font: "Raleway", sans-serif;
+  --highlight-font: "Lobster Two", sans-serif;
+}
+
 body {
+  font-family: var(--body-font);
 }
 
 h1 {
   text-align: center;
-  display: inline;
+  margin: 100px auto 40px;
 }
 
 h1 em {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: var(--highlight-font);
+  font-size: 60px;
+  color: var(--third-color);
+}
+
+h3 {
+  margin: 15px 0 30px 20px;
+  color: var(--third-color);
+}
+
+.navbar {
+  background: var(--second-color);
+}
+
+.navbar-brand {
+  font-family: var(--highlight-font);
+  font-size: 30px;
+}
+
+.about {
+  border: 3px solid var(--fourth-color);
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 50px;
+}
+
+.works {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.works .work {
+  border: 1px solid var(--fourth-color);
+  border-radius: 20px;
+  padding: 0;
+}
+
+.works img {
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+}
+
+.works a {
+  background: var(--second-color);
+  color: white;
+  display: block;
+  margin: 20px auto;
+  width: 75%;
+}
+
+.links {
+  text-align: right;
+  display: flex;
+}
+
+.links span {
+  text-align: center;
+  margin: 10px;
+}
+
+.links i {
+  font-size: 20px;
 }
