@@ -23,9 +23,10 @@ h1 em {
   color: var(--third-color);
 }
 
-h3{
-  margin: 15px 0 30px 20px;
+h3 {
+  margin: 10px 0 30px 0;
   color: var(--third-color);
+  text-indent: 20px;
 }
 
 .navbar {
@@ -71,8 +72,8 @@ h3{
 }
 
 .more-works {
-text-align: center;
-margin-bottom: 40px;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .more-works a {
@@ -85,19 +86,31 @@ margin-bottom: 40px;
   font-size: 40px;
   position: relative;
   top: 10px;
-
 }
 
 footer {
   background: var(--second-color);
+  color: white;
+  padding: 30px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+h4 {
+  line-height: 40px;
 }
 
 #contact-me a {
   color: var(--fourth-color);
+  background-color: white;
+  border-radius: 10px;
+  font-size: 22px;
+  font-weight: 500;
 }
 
 .links {
-  text-align: right;
   display: flex;
 }
 
@@ -108,4 +121,45 @@ footer {
 
 .links i {
   font-size: 20px;
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+}
+
+.code {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.code a {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .works {
+    grid-template-columns: 1fr;
+  }
+  main {
+    margin:0
+ }
+ h1, h1 em {
+  font-size: 32px;
+ }
+.navbar {
+  min-width:100%;
+}
+ .navbar-brand {
+  font-size: 25px
+ }
+ h3 {
+  font-size: 20px;
+ }
+.footer-container {
+  display: block;
+}
+.links {
+  margin-top: 40px;
+justify-content: space-evenly;}
 }
