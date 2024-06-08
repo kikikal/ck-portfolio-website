@@ -23,7 +23,7 @@ h1 em {
   color: var(--third-color);
 }
 
-h3 {
+h3{
   margin: 15px 0 30px 20px;
   color: var(--third-color);
 }
@@ -45,11 +45,11 @@ h3 {
 }
 
 .works {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-align: center;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap:20px;
+  grid-gap: 20px;
 }
 
 .works .work {
@@ -62,12 +62,38 @@ h3 {
   border-radius: 20px 20px 0 0;
 }
 
-.work a, .more-works {
+.work a {
   background: var(--second-color);
   color: white;
   display: block;
   margin: 20px auto;
   width: 75%;
+}
+
+.more-works {
+text-align: center;
+margin-bottom: 40px;
+}
+
+.more-works a {
+  color: var(--third-color);
+  text-decoration: none;
+}
+
+.material-symbols-outlined {
+  font-weight: 500;
+  font-size: 40px;
+  position: relative;
+  top: 10px;
+
+}
+
+footer {
+  background: var(--second-color);
+}
+
+#contact-me a {
+  color: var(--fourth-color);
 }
 
 .links {
