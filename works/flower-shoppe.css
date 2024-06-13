@@ -21,20 +21,30 @@ h3 {
   text-align: center;
 }
 
-.head {
-  background: rgb(234, 234, 234);
-  padding: 30px;
+section,
+.head,
+.foot {
+  padding: 50px 30px;
+  box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.08);
 }
 
-section {
-  padding: 30px;
-  box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.08);
+.head,
+.foot {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.6)
+    ),
+    url("/src/images/flower-shoppe/hero-img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 ul {
   list-style: none;
   display: flex;
   padding: 0;
+  margin: 0 auto;
+  max-width: 700px;
 }
 
 li {
@@ -60,7 +70,15 @@ img {
   max-height: 500px;
   display: block;
   margin: 0 auto;
-  padding-bottom: 30px;
   position: relative;
   top: -30px;
+  min-width: none;
+}
+
+.no-bg-img {
+  border-radius: 40px;
+}
+
+.head img {
+  position: relative;
 }
