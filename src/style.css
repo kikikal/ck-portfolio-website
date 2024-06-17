@@ -30,7 +30,8 @@ h3 {
   font-size: 24px;
 }
 
-p, ul {
+p,
+ul {
   margin-bottom: 40px;
   font-size: 14px;
 }
@@ -118,4 +119,13 @@ h4 {
     margin-top: 40px;
     justify-content: space-evenly;
   }
+  h5 {
+    font-size: 16px;
+  }
+  h6 {
+    font-size: 14px
+  }
+p, li {
+  font-size: 12px;
+}
 }

@@ -9,7 +9,18 @@
   padding: 0;
 }
 
+body {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+section {
+  padding: 50px 30px;
+  box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.08);
+}
+
 h1 em {
+  font-family: "Send Flowers", cursive;
   color: black;
 }
 
@@ -21,11 +32,15 @@ h3 {
   text-align: center;
 }
 
-section,
-.head,
-.foot {
-  padding: 50px 30px;
-  box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.08);
+h5 {
+  margin: 15px 0 10px;
+}
+
+h6,
+h5,
+h3 {
+  font-weight: normal;
+  text-transform: uppercase;
 }
 
 .head,
@@ -48,7 +63,7 @@ ul {
 }
 
 li {
-  width: 22%;
+  width: 23%;
   max-width: 200px;
   margin: 10px auto;
   text-align: center;
@@ -56,29 +71,95 @@ li {
   padding: 10px;
 }
 
+a {
+  color: black;
+}
+
 .number {
   font-size: 20px;
   background: white;
-  border-radius: 50px;
+  border-radius: 100%;
   padding: 17px;
   width: 60px;
   margin: 10px auto;
 }
 
 img {
-  text-align: center;
   max-height: 500px;
   display: block;
   margin: 0 auto;
   position: relative;
-  top: -30px;
-  min-width: none;
 }
 
-.no-bg-img {
-  border-radius: 40px;
+p {
+  margin-bottom: 10px;
 }
 
 .head img {
   position: relative;
+}
+
+.digital-wireframes img {
+  width: 50%;
+  margin: 0 5px;
+}
+
+.digital-wireframes .homepage,
+.digital-wireframes .accessibility-page {
+  font-size: 12px;
+  text-align: center;
+}
+
+.digital-wireframes .homepage-1,
+.digital-wireframes .homepage-2,
+.digital-wireframes .accessibility-page-1,
+.digital-wireframes .accessibility-page-2 {
+  margin-top: 50px;
+}
+
+.material-symbols-outlined {
+  font-size: 25px;
+}
+
+.mockups .homepage img {
+  width: 40%;
+}
+
+.mockups .bouquet-page img {
+  width: 30%;
+}
+
+.more-mockups img {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  width: 20%;
+  max-width: 230px;
+}
+
+.high-fidelity-prototype img {
+  max-height: 600px;
+}
+
+@media (max-width: 768px) {
+  .number {
+    font-size: 16px;
+    width: 55px;
+  }
+  ul {
+    display: block;
+  }
+  li {
+    width: 100%;
+  }
+  .digital-wireframes .homepage-1,
+  .digital-wireframes .homepage-2,
+  .digital-wireframes .accessibility-page-1,
+  .digital-wireframes .accessibility-page-2 {
+    display: none;
+  }
+  .digital-wireframes img {
+    width: 65%;
+    margin: 0 auto;
+  }
 }
