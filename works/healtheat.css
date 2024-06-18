@@ -1,0 +1,45 @@
+:root {
+  --first-color: #27296d;
+  --second-color: #5e63b6;
+  --third-color: #a393eb;
+  --fourth-color: rgb(199, 134, 201);
+}
+
+h1 em {
+  font-family: "Send Flowers", cursive;
+  color: black;
+}
+
+.head,
+.foot {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.6)
+    ),
+    url("/src/images/flower-shoppe/hero-img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.mockups .homepage img {
+  width: 40%;
+}
+
+.mockups .bouquet-page img {
+  width: 30%;
+}
+
+.more-mockups img {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  width: 20%;
+  max-width: 230px;
+}
+
+.high-fidelity-prototype img {
+  max-height: 600px;
+}
+
+@media (max-width: 768px) {
+}
