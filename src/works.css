@@ -40,6 +40,25 @@
   color: var(--second-color);
   transition: all 250ms ease-in-out;
 }
+.bouquet-boutique {
+  display: grid;
+  border: 1px solid var(--fourth-color);
+  border-radius: 20px;
+  margin: auto 0;
+  grid-template-columns: 2fr 1fr;
+  background-color: white;
+  grid-gap: 5px;
+}
+
+.bouquet-boutique img {
+  border: none;
+  border-radius: 0;
+  margin: auto 0;
+}
+
+.bouquet-boutique .img-1 {
+  border-radius: 20px 0 0 20px;
+}
 
 @media (max-width: 768px) {
   .work {
