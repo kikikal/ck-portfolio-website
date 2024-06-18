@@ -56,10 +56,9 @@
           <span class="col-md-6">
             <h3>Case study</h3>
             <h1>
-              <em
-                >Bouquet
-                <div class="title-line-2">Boutique</div></em
-              >
+              <em>Bouquet</em>
+              <br class="d-none d-md-block" />
+              <em class="ms-md-5 ms-0">Boutique</em>
             </h1>
             <h3 class="text-end">Responsive Website</h3>
           </span>
@@ -74,15 +73,13 @@
       </div>
       <main>
         <section>
-          <h3>Check out my responsive web designs in action</h3>
-        </section>
-        <section>
           <h3>Project Overview</h3>
           <h5>The Product</h5>
           <p>
             Following ‘Flower Shoppe’ the flower ordering and delivering mobile
             app I designed, I chose to make responsive web designs with the same
             theme, creating the website ‘Bouquet Boutique’.
+            <br />
             <a href="flower-shoppe.html" title="Open 'Flower Shoppe' case study"
               >View 'Flower Shoppe' Case Study</a
             >
@@ -112,7 +109,7 @@
           <img
             src="/src/images/bouquet-boutique/sitemap.png"
             alt="Preview of Sitemap for 'Bouquet Boutique'"
-            class="img-fluid"
+            class="img-fluid sitemap"
           />
         </section>
         <section>
@@ -143,18 +140,18 @@
               />
             </div>
           </div>
-          <div>
+          <div class="mt-5">
             <h6>Screen size variations</h6>
             <p>
               ‘Search Page’ - I designed the final page for the search page and
               created a rough tablet size and phone size respectively to show
               the layout on different screen sizes
             </p>
-            <p class="text-center">'Searh Page' - Final</p>
+            <p class="text-center">'Search Page' - Final</p>
             <img
               src="/src/images/bouquet-boutique/search-page-paper-wireframe-final.png"
               alt="'Bouquet Boutique' - search page - paper wireframe - final"
-              class="img-fluid"
+              class="img-fluid paper-wireframe-final"
             />
           </div>
         </section>
@@ -197,7 +194,7 @@
               </div>
             </span>
             <span class="col-md-6">
-              <h6 class="text-end mt-lg-0 mt-5">
+              <h6 class="text-end mt-md-0 mt-5">
                 Homepage - Screen Size Variation
               </h6>
               <p class="text-end">
@@ -285,7 +282,7 @@
               />
             </div>
           </div>
-          <div class="text-end mt-4">
+          <div class="text-end mt-5">
             <h6>Build-A-Bouquet - Theme Selected Page</h6>
             <p>
               The layout of the page originally presented the themes in a
@@ -316,7 +313,7 @@
         <section class="d-md-block d-none">
           <h5 class="text-center">More Key Mockups</h5>
           <div class="row more-mockups">
-            <div class="col">
+            <div class="col-12">
               <h6>Desktop Website</h6>
             </div>
             <div class="col-3">
@@ -328,7 +325,7 @@
             </div>
             <div class="col-3">
               <img
-                src="/src/images/bouquet-boutique/build-a-bouquet-desktop-digital-wireframe.png"
+                src="/src/images/bouquet-boutique/build-a-bouquet-theme-selected-desktop-mockup.png"
                 alt="'Bouquet Boutique - Desktop - build-a-bouquet - Mockup"
                 class="img-fluid"
               />
@@ -347,36 +344,43 @@
                 class="img-fluid"
               />
             </div>
-            <div class="col">
+            <div class="col-12 mt-4">
               <h6>Mobile Website</h6>
             </div>
-            <div class="col-3">
-              <img
-                src="/src/images/bouquet-boutique/homepage-mobile-mockup.png"
-                alt="'Bouquet Boutique - Mobile - Homepage - Mockup"
-                class="img-fluid"
-              />
-            </div>
-            <div class="col-3">
-              <img
-                src="/src/images/bouquet-boutique/build-a-bouquet-mobile-digital-wireframe.png"
-                alt="'Bouquet Boutique - Mobile - build-a-bouquet - Mockup"
-                class="img-fluid"
-              />
-            </div>
-            <div class="col-3">
-              <img
-                src="/src/images/bouquet-boutique/item-page-mobile-mockup.png"
-                alt="'Bouquet Boutique - Mobile - item page - Mockup"
-                class="img-fluid"
-              />
-            </div>
-            <div class="col-3">
-              <img
-                src="/src/images/bouquet-boutique/payment-delivery-page-mobile-mockup.png"
-                alt="'Bouquet Boutique - Mobile - Payment Delivery - Mockup"
-                class="img-fluid"
-              />
+            <div class="row">
+              <span class="col-3">
+                <img
+                  src="/src/images/bouquet-boutique/homepage-mobile-mockup.png"
+                  alt="'Bouquet Boutique - Mobile - Homepage - Mockup"
+                  class="img-fluid"
+                />
+              </span>
+              <span class="col-3 mobile-bouquet-page">
+                <img
+                  src="/src/images/bouquet-boutique/bouquet-page-mobile-mockup-1.png"
+                  alt="'Bouquet Boutique - Mobile - build-a-bouquet - Mockup - 1"
+                  class="img-fluid d-flex"
+                />
+                <img
+                  src="/src/images/bouquet-boutique/bouquet-page-mobile-mockup-2.png"
+                  alt="'Bouquet Boutique - Mobile - build-a-bouquet - Mockup - 2"
+                  class="img-fluid d-flex"
+                />
+              </span>
+              <span class="col-3">
+                <img
+                  src="/src/images/bouquet-boutique/item-page-mobile-mockup.png"
+                  alt="'Bouquet Boutique - Mobile - item page - Mockup"
+                  class="img-fluid"
+                />
+              </span>
+              <span class="col-3">
+                <img
+                  src="/src/images/bouquet-boutique/payment-delivery-page-mobile-mockup.png"
+                  alt="'Bouquet Boutique - Mobile - Payment Delivery - Mockup"
+                  class="img-fluid"
+                />
+              </span>
             </div>
           </div>
         </section>
@@ -394,12 +398,12 @@
             drop-downs, selected/unselected).
           </p>
           <img
-            src="/src/images/bouquet-boutique/high-fidelity-prototype-dektop-1.png"
+            src="/src/images/bouquet-boutique/high-fidelity-prototype-desktop-1.png"
             alt="'Bouquet Boutique' - desktop - high fidelity prototype - 1"
             class="img-fluid"
           />
           <img
-            src="/src/images/bouquet-boutique/high-fidelity-prototype-dektop-2.png"
+            src="/src/images/bouquet-boutique/high-fidelity-prototype-desktop-2.png"
             alt="'Bouquet Boutique' - desktop - high fidelity prototype - 2"
             class="img-fluid"
           />
