@@ -99,24 +99,56 @@ h6 {
   background-repeat: no-repeat;
 }
 
-.mockups .homepage img {
-  width: 40%;
+.mockups .homepage .mobile-img {
+  width: 35%;
 }
 
-.mockups .bouquet-page img {
+.mockups .recipe-page .mobile-img {
+  width: 14%;
+}
+
+.mockups .recipe-list-page {
+  justify-content: space-around;
+}
+
+.mockups .recipe-list-page .mobile-img {
+  width: 20%;
+  height: fit-content;
+}
+
+.mockups .add-to-cart-overlay img {
   width: 30%;
 }
 
+.mockups .drop-down-buttons .material-symbols-outlined {
+  position: relative;
+  left: 50%;
+}
+
 .more-mockups img {
-  margin-top: 20px;
-  display: flex;
   justify-content: space-around;
-  width: 20%;
-  max-width: 230px;
+  max-width: 500px;
+  height: fit-content;
 }
 
 .high-fidelity-prototype img {
   max-height: 600px;
+}
+
+.mobile-app-design div h6 {
+  margin-top: 0px;
+}
+
+.mobile-app-design .mobile-img {
+  width: 40%;
+}
+
+.material-symbols-outlined {
+  margin-top: 25%;
+}
+
+.user-comment {
+  color: var(--second-color);
 }
 
 @media (max-width: 768px) {
