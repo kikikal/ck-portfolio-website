@@ -21,12 +21,11 @@ body {
 }
 
 .container {
-  padding: 60px 40px 40px;
+  padding: 60px 40px 0;
   box-shadow: var(--container-shadow);
 }
 
 section {
-  padding: 20px 40px;
   padding: 50px 30px;
 }
 
@@ -94,6 +93,8 @@ footer {
 
 #contact-me a {
   color: var(--fourth-color);
+  display: inline-block;
+  word-break: break-word;
   background-color: white;
   border-radius: 10px;
   font-size: 20px;
@@ -133,9 +134,9 @@ footer {
     margin: 0;
     padding: 100px 20px;
   }
-
   .intro {
-    padding: 0;
+    padding-right: 0;
+    padding-left: 0;
   }
   h1,
   h1 em {
@@ -152,6 +153,7 @@ footer {
   }
   .footer-container {
     display: block;
+    text-align: center;
   }
   .links {
     margin-top: 40px;
