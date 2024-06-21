@@ -1,19 +1,22 @@
 :root {
   --first-color: #32620e;
   --second-color: #5f9437;
-  --third-color: #a4d67e;
-  --fourth-color: #ccd8c3;
-  --fifth-color: #d6ffa2;
-  --sixth-color: #f6ffeb;
+  --third-color: #d6ffa2;
+  --fourth-color: #f6ffeb;
 }
 
-h1 em {
-  font-family: "Send Flowers", cursive;
-  color: black;
+.logo {
+  width: 60%;
+  margin-bottom: 30px;
+}
+
+h3 {
+  color: var(--first-color);
 }
 
 h5 {
   text-align: center;
+  color: black;
 }
 
 h6,
@@ -24,7 +27,7 @@ h6 a {
 }
 
 li {
-  background-color: var(--sixth-color);
+  background-color: var(--fourth-color);
 }
 
 .number {
@@ -42,16 +45,16 @@ li {
 .list li {
   background: none;
   text-align: left;
-  width: 100%;
+  width: 95%;
   max-width: none;
-  margin: 0 20px;
+  margin: 0 0 0 20px;
   padding: 0;
   line-height: 1;
 }
+
 .user-journey-map-grid {
   display: grid;
   grid-template-columns: 1fr 1.5fr 1.5fr 1.5fr;
-  border: 1px solid var(--first-color);
   overflow-x: auto;
 }
 .user-journey-map-grid ul,
@@ -103,13 +106,7 @@ li {
 
 .head,
 .foot {
-  background-image: linear-gradient(
-      rgba(255, 255, 255, 0.6),
-      rgba(255, 255, 255, 0.6)
-    ),
-    url("/src/images/flower-shoppe/hero-img.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: var(--third-color);
 }
 
 .mockups .homepage .mobile-img {
@@ -169,4 +166,18 @@ li {
   .digital-wireframes .comment {
     display: block;
   }
+  .logo {
+    width: 85%;
+  }
+
+  h6 {
+    text-align: center;
+  }
+
+  .mockups .recipe-page .mobile-img {
+  width: 20%;
+}
+.mobile-app-design .mobile-img {
+  margin: 0 auto;
+}
 }
