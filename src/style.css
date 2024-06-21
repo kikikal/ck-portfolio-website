@@ -1,25 +1,38 @@
 :root {
-  --first-color: #27296d;
-  --second-color: #5e63b6;
-  --third-color: #a393eb;
+  --first-color: #6d273c;
+  --second-color: #c38db6;
+  --third-color: #7d62a5;
   --fourth-color: #c786c9;
+  --fifth-color: rgba(231, 213, 250, 0.2);
 
   --body-font: "Raleway", sans-serif;
   --highlight-font: "Lobster Two", sans-serif;
+
+  --container-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  --button-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+
+  --button-hover-transition: all 250ms ease-in-out;
 }
 
 body {
   font-family: var(--body-font);
+  margin: 0 auto;
+  max-width: 1000px;
 }
 
 .container {
-  width: 85%;
-  max-width: 1000px;
+  padding: 60px 40px 40px;
+  box-shadow: var(--container-shadow);
+}
+
+section {
+  padding: 20px 40px;
+  padding: 50px 30px;
 }
 
 h1 {
   text-align: center;
-  margin: 100px auto 40px;
+  margin: 0 auto;
 }
 
 h1 em {
@@ -29,20 +42,38 @@ h1 em {
 }
 
 h3 {
-  margin: 10px 0 30px 0;
+  text-align: center;
+  margin: 10px 0 20px;
   color: var(--third-color);
-  text-indent: 20px;
   font-size: 24px;
+}
+
+h4 {
+  font-size: 18px;
+  line-height: 40px;
+}
+
+h5 {
+  text-align: center;
+  color: black;
+}
+
+h6,
+h5,
+h4,
+h3 {
+  font-weight: normal;
+  text-transform: uppercase;
 }
 
 p,
 ul {
-  margin-bottom: 40px;
   font-size: 14px;
 }
 
 .navbar {
   background: var(--second-color);
+  box-shadow: var(--container-shadow);
 }
 
 .navbar-brand {
@@ -61,16 +92,13 @@ footer {
   justify-content: space-between;
 }
 
-h4 {
-  line-height: 40px;
-}
-
 #contact-me a {
   color: var(--fourth-color);
   background-color: white;
   border-radius: 10px;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 500;
+  box-shadow: var(--button-shadow);
 }
 
 .links {
@@ -103,6 +131,11 @@ h4 {
 @media (max-width: 768px) {
   main {
     margin: 0;
+    padding: 100px 20px;
+  }
+
+  .intro {
+    padding: 0;
   }
   h1,
   h1 em {
