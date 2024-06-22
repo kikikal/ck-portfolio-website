@@ -17,12 +17,12 @@
 body {
   font-family: var(--body-font);
   margin: 0 auto;
-  max-width: 1000px;
 }
 
 .container {
   padding: 60px 40px 0;
   box-shadow: var(--container-shadow);
+  max-width: 1000px;
 }
 
 section {
@@ -94,6 +94,8 @@ footer {
   background: var(--second-color);
   color: white;
   padding: 30px;
+  width: 100%;
+  margin: 0;
 }
 
 .footer-container {
