@@ -28,15 +28,25 @@ body {
 section {
   padding: 50px 30px;
 }
-
-h1 {
+.intro {
   text-align: center;
-  margin: 0 auto;
 }
 
-h1 em {
+h2,
+strong {
+  margin: 0 auto;
+  display: inline;
+  font-weight: normal;
+}
+
+strong {
+  font-size: 35px;
+}
+
+h1 {
   font-family: var(--highlight-font);
   font-size: 60px;
+  display: block;
   color: var(--third-color);
 }
 
@@ -138,8 +148,10 @@ footer {
     padding-right: 0;
     padding-left: 0;
   }
-  h1,
-  h1 em {
+  strong {
+    font-size: 28px;
+  }
+  h1 {
     font-size: 42px;
   }
   .navbar {
