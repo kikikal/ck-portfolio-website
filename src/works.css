@@ -10,6 +10,7 @@
   grid-gap: 20px;
   background: var(--fifth-color);
   padding: 20px 30px;
+  border-radius: 15px;
 }
 
 .work img {
