@@ -90,24 +90,53 @@
     </header>
     <main class="container">
       <section class="intro">
+        <div class="icon">
+          <p>
+            CK
+          </p>
+        </div>
         <h1><em>Christina Kalyvas</em></h1>
         <h2>
-          <strong>Software Developer</strong>
+          Software Developer & UX Designer
         </h2>
+        <div>
+          <a href="/works.html" title="Go to 'My Works' page" class="btn primary-btn"
+              >See my work
+          </a>
+          <a
+            href="src/Resume.pdf"
+            target="_blank"
+            title="Open Christina Kalyvas's Resume"
+            class="btn secondary-btn"
+            ><span><i class="fa-solid fa-file"></i></span>
+            <span>Resume</span>
+          </a>
+        </div>
       </section>
       <section class="about">
-        <h3>A bit about me</h3>
-        <p>
-          I am based in Victoria, Australia, and am in my final year of my Masters in Information Technology at Monash University.
-        </p>
-        <p>
-          I have experience in both UX design as well as front-end and back-end development,
-          and have worked with design tools such as Figma and LucidChart and coding languages such as Python, Java, SQL, JavaScript, Kotlin, HTML and R.
-          I have strong interests in front-end development but am open to any opportunities relating to software development.
-        </p>
+        <div>
+          <h3>about me</h3>
+          <p>
+            Based in Victoria, Australia - final year of my Masters in Information Technology at Monash University.
+            I have experience in UX design, front-end, and back-end development.
+          </p>
+        </div>
+        <div class="skills">
+          <h3>skills</h3>
+          <ul>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Java</li>
+            <li>SQL</li>
+            <li>Kotlin</li>
+            <li>HTML/CSS</li>
+            <li>Figma</li>
+            <li>R</li>
+          </ul>
+        </div>
       </section>
       <section>
-        <h3>Some of my featured works</h3>
+        <h3 class="text-center">Featured works</h3>
         <div class="works">
           <div class="work">
             <img
@@ -115,12 +144,16 @@
               alt="Screenshot of MMOSS"
               class="img-fluid"
             />
+            <h6>MMOSS</h6>
+            <p>
+              Supermarket management system built with a team using Java.
+            </p>
             <a
-              class="btn"
+              class="btn tertiary-btn"
               href="https://github.com/A-P-Kaviraj/Monash-Merchant-Supermarket-System"
               target="_blank"
               title="Open MMOSS Repository"
-              >Open MMOSS Repository</a
+              >View Repository</a
             >
           </div>
           <div class="work">
@@ -129,12 +162,16 @@
               alt="Screenshot of FIT5137-Assignment 3 map"
               class="img-fluid"
             />
+            <h6>PTV Map</h6>
+            <p>
+              Geospatial data analysis & visualisation for public transport accessibility.
+            </p>
             <a
-              class="btn"
+              class="btn tertiary-btn"
               href="https://github.com/kikikal/FIT5137-Assignment3"
               target="_blank"
               title="Open FIT5137-Assignment 3 Repository"
-              >Open FIT5137-Assignment 3 Repository</a
+              >View Repository</a
             >
           </div>
           <div class="work">
@@ -143,15 +180,19 @@
               alt="'HealthEat' Mockup"
               class="img-fluid"
             />
+            <h6>HealthEat</h6>
+            <p>
+              UX case study for a nutrition app designed end-to-end in Figma.
+            </p>
             <a
-              class="btn"
+              class="btn tertiary-btn"
               href="https://christinakalyvas.netlify.app/works/healtheat"
               target="_blank"
               title="Open 'HealthEat' Case Study"
-              >Open 'HealthEat' Case Study</a
+              >Case Study</a
             >
           </div>
-          <div class="work">
+          <!-- <div class="work">
             <img
               src="src/images/dictionary.png"
               alt="Screenshot of Dictionary App"
@@ -193,14 +234,14 @@
               title="Launch Tokyo Project"
               >Launch Tokyo Project</a
             >
-          </div>
+          </div> -->
         </div>
-        <h4 class="more-works">
-          <a href="/works.html" title="Go to 'My Works' page"
-            >Check out more of my projects
+        <div class="text-center">
+          <a href="/works.html" title="Go to 'My Works' page" class="btn secondary-btn"
+            >Check out more projects
             <span class="material-symbols-outlined"> arrow_forward </span>
           </a>
-        </h4>
+        </div>
       </section>
     </main>
     <footer>
@@ -208,8 +249,6 @@
         <div id="contact-me">
           <h4>
             Interested in working together?
-            <br />
-            Contact me at:
             <br class="d-md-none" />
             <a
               class="btn"
@@ -227,7 +266,7 @@
               target="_blank"
               title="Go to Christina Kalyvas's Linkedin"
               ><div><i class="fa-brands fa-linkedin"></i></div>
-              <div>Linkedin</div></a
+              <div>LinkedIn</div></a
             ></span
           ><span>
             <a
@@ -236,7 +275,7 @@
               title="Go to Christina Kalyvas's Github"
             >
               <div><i class="fa-brands fa-github"></i></div>
-              <div>Github</div>
+              <div>GitHub</div>
             </a></span
           ><span>
             <a
