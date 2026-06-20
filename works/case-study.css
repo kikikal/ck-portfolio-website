@@ -1,3 +1,8 @@
+body {
+  background: white;
+  color: #212529;
+}
+
 .container-fluid {
   padding: 0;
 }
@@ -14,6 +19,10 @@ h5 {
   margin: 15px 0;
 }
 
+h6 {
+  font-weight: 300;
+}
+
 ul {
   list-style: none;
   display: flex;
@@ -27,7 +36,7 @@ li {
   max-width: 200px;
   margin: 10px auto;
   text-align: center;
-  background-color: var(--fifth-color);
+  background-color: rgba(231, 213, 250, 0.2);
   padding: 10px;
 }
 

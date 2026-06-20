@@ -1,10 +1,11 @@
 :root {
-  --first-color: #6d273c;
-  --second-color: #c38db6;
-  --third-color: #7d62a5;
-  --fourth-color: #c786c9;
-  --fifth-color: rgba(231, 213, 250, 0.2);
-  --outline-color: rgba(94, 94, 94, 0.2);
+  --first-color: #3a2a2c;
+  --second-color: #b56576;
+  --third-color: #b56576;
+  --fourth-color: #f0d0d5;
+  --fifth-color: rgba(181, 101, 118, 0.08);
+  --outline-color: rgba(181, 101, 118, 0.2);
+  --background-color: #1c1c1e;
 
   --body-font: "Raleway", sans-serif;
   --highlight-font: "Lobster Two", sans-serif;
@@ -13,6 +14,11 @@
   --button-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 
   --button-hover-transition: all 250ms ease-in-out;
+}
+
+body {
+  background: var(--background-color);
+  color: var(--fourth-color);
 }
 
 .btn {
@@ -27,7 +33,7 @@
 }
 
 .primary-btn {
-  color: white;
+  color: var(--fourth-color);
   background-color: var(--third-color);
   border: 1px solid var(--third-color);
 }
@@ -39,23 +45,22 @@
 
 .tertiary-btn {
   background: var(--second-color);
-  color: white;
+  color: var(--fourth-color);
 }
 
 .primary-btn:hover {
-  background: white;
   color: var(--third-color);
   border: 1px solid var(--third-color);
 }
 
 .secondary-btn:hover {
   background: var(--third-color);
-  color: white;
+  color: var(--fourth-color);
   border: 1px solid var(--third-color);
 }
 
 .tertiary-btn:hover {
-  background: white;
+  background: var(--fourth-color);
   border: 1px solid var(--second-color);
   color: var(--second-color);
 }
@@ -81,17 +86,6 @@ section {
   padding: 50px;
 }
 
-h2,
-strong {
-  margin: 0 auto;
-  display: inline;
-  font-weight: normal;
-}
-
-strong {
-  font-size: 35px;
-}
-
 h1 {
   font-family: var(--highlight-font);
   font-size: 60px;
@@ -101,6 +95,8 @@ h1 {
 
 h2 {
   font-size: 20px;
+  margin: 0 auto 20px;
+  font-weight: normal;
 }
 
 h3 {
@@ -158,10 +154,10 @@ footer {
 }
 
 #contact-me a {
-  color: var(--fourth-color);
+  color: var(--first-color);
   display: inline-block;
   word-break: break-word;
-  background-color: white;
+  background-color: var(--fourth-color);
   border-radius: 10px;
   font-size: 16px;
   font-weight: 500;

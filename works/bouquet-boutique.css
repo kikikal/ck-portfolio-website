@@ -3,6 +3,10 @@ h1 em {
   color: black;
 }
 
+h3 {
+  color: black;
+}
+
 .head,
 .foot {
   background-image: linear-gradient(
