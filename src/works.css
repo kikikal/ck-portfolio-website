@@ -16,6 +16,7 @@
   border: 1px solid var(--outline-color);
   border-radius: 10px;
   padding: 0;
+  max-height: 300px;
 }
 
 .bouquet-boutique {
